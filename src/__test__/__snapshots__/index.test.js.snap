@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<Image
+  source={undefined}
+  style={
+    Object {
+      "borderRadius": 24,
+      "flexDirection": "row",
+      "height": 48,
+      "overflow": "hidden",
+      "width": 48,
+    }
+  }
+/>
+`;
