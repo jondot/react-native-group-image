@@ -32,9 +32,6 @@ storiesOf('GroupImage', module)
   .add('single', () => <GroupImage images={[
     { uri: images[0] },
   ]} />)
-  .add('single', () => <GroupImage images={[
-    { uri: images[0] },
-  ]} />)
   .add('two', () => <GroupImage images={[
     { uri: images[0] },
     { uri: images[1] },

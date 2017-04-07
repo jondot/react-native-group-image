@@ -3,9 +3,11 @@ import {
   Image,
   StyleSheet,
 } from 'react-native'
-import React, {PureComponent} from 'react'
 
-export default class GroupImage extends PureComponent{
+import React, {PureComponent, PropTypes as P} from 'react'
+const ImageSourcePropType = require('ImageSourcePropType')
+
+class GroupImage extends PureComponent{
   render(){
     const {images = [], displayOnly, background, width = 48, style} = this.props
     const num = displayOnly || images.length
@@ -74,3 +76,10 @@ export default class GroupImage extends PureComponent{
   }
 }
 
+GroupImage.propTypes = {
+  images: P.arrayOf(ImageSourcePropType),
+  displayOnly: P.number,
+  background: ImageSourcePropType,
+}
+
+export default GroupImage
